@@ -3,8 +3,7 @@ const app=express();
 const path=require('path');
 const bodyParser=require('body-parser');
 const mongoose=require('mongoose');
-const { redirect } = require('express/lib/response');
-const port=80;
+const port=process.env.PORT||80;
 
 mongoose.connect('mongodb://localhost/user_info',{useNewUrlParser:true,useUnifiedTopology:true});
 let db=mongoose.connection;
