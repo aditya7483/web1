@@ -16,5 +16,13 @@
     "mongoose": "^6.1.7",
     "nodemon": "^2.0.15",
     "pug": "^3.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aditya7483/web1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aditya7483/web1/issues"
+  },
+  "homepage": "https://github.com/aditya7483/web1#readme"
 }
