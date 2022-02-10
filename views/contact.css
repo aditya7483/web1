@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: #e7fdfd;
+}
+
+#contact{
+    background-color: rgb(149, 149, 149);
+    border-radius: 11px;
+}
+
+#con_intro::before{
+    content:"";
+    background: url('../static/pics/contact us.jpg') no-repeat center center/cover;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;   
+    width: 100%;
+    z-index: -1;
+    opacity:0.8;
+}
+
+#con_intro{
+    position:relative;
+    border: 0.2px solid;
+    height: 15rem;
+    color:white
+}
+
+#heading1{
+    font-family: 'Rowdies', cursive;
+    margin: 44px 0px 42px 20px;
+}
+
+p#para {
+    margin: 0px 50px;
+}
+
+#main_div{
+    display: flex;
+    background-color: #f0f4ff;
+    width: 70%;
+    height:29rem;
+    margin: 24px auto;
+    border: 2px solid black;
+    box-shadow: black 1px 1px 6px 1px;
+    border-radius:20px;
+}
+
+#logos{
+    box-shadow: black 2px 0px 0px 0px;
+    width:24rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 34px 0px;
+}
+
+#office{
+    height:2rem;
+}
+
+#email{
+    height:2rem;
+}
+
+#tele{
+    height:2rem;
+}
+
+.infos{
+    margin-bottom: 25px;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:auto;
+}
+
+.input{
+    margin:10px 0;
+    border:1px solid black;
+    border-radius:6px;
+    width:23rem;
+    justify-content: center;
+}
+
+.text1{
+    height:2rem;
+}
+
+textarea{
+    resize: none;
+}
+
+.primary_button{
+    width: 6rem;
+    margin: 13px;
+    padding: 10px 0px;
+    border-radius: 9px;
+    font-weight: bold;
+    cursor:pointer;
+    background-color: #9e86ff;
+}

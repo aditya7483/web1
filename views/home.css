@@ -1,0 +1,392 @@
+body::before{
+    content:"";
+    background-color: #bdbdbd;
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index: -1;
+    opacity:0.3;
+}
+
+body{
+    position: relative;
+}
+
+
+#home{
+    background-color: rgb(149, 149, 149);
+    border-radius: 11px;
+}
+
+/* intro */
+
+.intro::before{
+    content:"";
+    background: url('../static/pics/nightsky.jpg') no-repeat center center/cover;
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index: -1;
+    opacity:0.86;
+}
+.intro{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:600px;
+    z-index: 1;
+}
+
+.con{
+    margin: 125px;
+    color: white
+}
+
+.in_2{
+    display:none;
+}
+
+/* .heading1{
+    font-size:2.5rem;
+font-family: 'Merriweather Sans', sans-serif;
+    margin: 70px 5px 9px 5px;
+} */
+
+.head1{
+    margin: 14px;
+}
+.head2{
+    font-family: 'Lobster', cursive;
+    font-size: 4rem;
+}
+.p1{
+    font-family: 'Padauk', sans-serif;
+    /* font-family: 'Neonderthaw', cursive; */
+    font-size:18px;
+    margin: 78px;
+}
+
+.btn1{
+    font-family: 'Secular One', sans-serif;
+    width: 128px;
+    height: 43px;
+    font-size: 17px;
+    font-weight: bold;
+    border: 3px double #af3ce9;
+    color: #af3ce9;
+    border-radius: 10px;
+    transition-property: all ;
+    transition-duration: 0.5ms;
+}
+
+.btn1:hover{
+    cursor: pointer;
+    background-color: #b94aff;
+    box-shadow: #09ffac 1px 1px 8px 3px;
+    color: #e4e4eb;
+    border-color: #09ffac;
+}
+
+
+/* services */
+
+.heading2{
+    font-family: 'Work Sans', sans-serif;
+    width: 200px;
+    margin: 22px auto 5px auto;
+    color: #4a4ecb;
+}
+
+.services{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.services>div{
+    background-color: #fafaff;
+    border: 2px solid #289cbf;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 220px;
+    width: 385px;
+    border-radius: 25px;
+    margin:8px;
+    box-shadow: #2a2a2a 4px 6px 10px 1px;
+}
+
+.btn2{
+    background-color: #e7e7e7;
+    font-weight: bold;
+    width: 100px;
+    margin: 22px;
+    padding: 9px 2px;
+    border-radius: 18px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 2px;
+}
+
+.btn2:hover{
+    box-shadow: none;
+    background-color:rgb(212, 212, 212);
+    cursor:pointer;
+}
+
+.ser_head{
+    margin-bottom: 30px;
+}
+
+#plane{
+    height:72px;
+}
+
+#train{
+    height:72px;
+}
+
+#bus{
+    height:63px;
+    margin-bottom: 8px;
+}
+
+/* about */
+/* .about::before{
+    content: "";
+    background: url('../static/travelling.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+} */
+
+.about{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #ff9c47;
+    background-color: rgb(250 250 255);
+    border-radius: 121px;
+    align-items: center;
+    margin: 39px 10px;
+    position: relative;
+    color: black;
+    margin: 45px auto;
+    width: 75%;
+    box-shadow: black 4px 4px 11px 0px;
+}
+
+.about>h1{
+    font-size: 2.4rem;
+    margin: 40px;
+    color: #7258ff;
+}
+
+.p3{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#ab_para{
+    width: 85%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btn3{
+    margin: 26px 7px;
+    height: 42px;
+    width: 137px;
+    font-size: 1.1rem;
+    border: 2px solid #00d0ff;
+    background: white;
+    font-weight: bold;
+}
+
+.btn3>a{
+    text-decoration: none;
+    padding: 9px 20px;
+    color: #00d0ff;
+}
+
+.btn3:hover{
+    cursor:pointer;
+    background-color: #00d0ff;
+}
+
+.btn3>a:hover{
+    color:white;
+}
+
+@media screen and (max-width:886px) and (min-width:753px){
+    /* body{
+        background-color: rgb(78, 255, 8);
+    } */
+
+    .intro{
+        height:375px;
+    }
+
+    .btn1 {
+        width: 109px;
+        height: 34px;
+        font-size: 15px;
+    }
+
+    .head1 {
+        font-size: 15px;
+    }
+
+    .head2{
+        font-size: 2.7rem;
+    }
+
+    .con {
+        margin: 53px;
+    }
+
+    .p1{
+        font-size: 15px;
+        margin: 42px 16px;
+    }
+
+    .services>div{
+        margin:7px;
+    }
+}
+
+@media screen and (max-width:752px){
+
+
+    
+
+    /* intro */
+
+    .intro {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 280px;
+        z-index: 1;
+    }
+
+    .con {
+        margin: 24px 3px;
+    }
+
+    .head1 {
+        margin: 11px;
+        font-size: 11px;
+    }
+
+    .head2 {
+        font-size: 1.6rem;
+    }
+
+    .p1 {
+        font-size: 12px;
+        margin: 41px 14px;
+    }
+
+    .btn1 {
+        font-family: 'Secular One', sans-serif;
+        width: 78px;
+        height: 23px;
+        font-size: 11px;
+        font-weight: bold;
+        border: 3px double #af3ce9;
+        color: #af3ce9;
+        border-radius: 10px;
+        transition-property: all;
+        transition-duration: 0.5ms;
+    }
+    /* services */
+
+    .heading2 {
+        width: 125px;
+        font-size: 20px;
+    }
+
+    .services>div {
+        height: 162px;
+        width: 265px;
+    }
+
+    .ser_head {
+        margin-bottom: 16px;
+        font-size: 18px;
+    }
+
+    .p2{
+        font-size: 13px;
+    }
+
+    .btn2{
+        font-size: 11px;
+        width: 75px;
+        margin: 16px;
+        padding: 7px 2px;
+    }
+
+    #plane{
+        height: 43px;
+    }
+    
+    #train{
+        height: 43px;
+    }
+
+    #bus{
+        height: 34px;
+    }
+
+    /* about */
+    .about {
+        border-radius: 21px;
+        align-items: center;
+        margin: 39px 10px;
+        margin: 45px auto;
+        width: 95%;
+    }
+
+    .about>h1 {
+        font-size: 1.4rem;
+        margin: 21px;
+        text-align: center;
+        color: #7258ff;
+    }
+
+    #ab_para {
+        width: 95%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .btn3 {
+        margin: 16px 7px;
+        height: 23px;
+        width: 81px;
+        font-size: 11.5px;
+    }
+
+    footer{
+        font-size: 11px;
+    }
+}

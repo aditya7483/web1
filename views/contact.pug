@@ -1,0 +1,56 @@
+extends base.pug
+
+block style
+    style 
+        include ./contact.css
+
+block links 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+    
+
+block content 
+
+    <div id="con_intro">
+        <h1 id="heading1">Thanks for taking your time to reach out to us</h1>
+        <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit repellendus animi eum dolor, excepturi consequatur.</p>
+    </div>
+    <div id=main_div>
+        <div id="logos">
+            <img src="../static/pics/email logo.png" alt="" id="email">
+            <div class="infos">
+                <h2 class="heading2 center">Our Email</h2>
+                <p class="center">abc@gmail.com</p>
+                <p class="center">xyz@gmail.com</p>
+                <p class="center">placeholder@gmail.com</p>
+            </div>
+            <img src="../static/pics/tele logo.png" alt="" id="tele">
+            <div class="infos">
+                <h2 class="heading2 center">Contact Info</h2>
+                <p class="center">+91-1489319873</p>
+                <p class="center">+91-9345794859</p>
+                <p class="center">080-9387499</p>
+            </div>
+            <img src="../static/pics/office logo.png" alt=""id="office">
+            <div class="infos">
+                <h2 class="heading2 center">Location</h2>
+                <p class="center">#29/B MK Street</p>
+                <p class="center">Bengaluru-563890</p>
+                <p class="center">Karnataka, India</p>
+            </div>
+        </div>
+        <form action="/contact" method="post" id="form">
+            <h1 style="margin:20px">Send us a message</h1>
+            <p style="color:red">#{error}</p>
+            <input type="text" name="first_name" id="first_name" class="input text1" placeholder="Enter your first name">
+            <input type="text" name="last_name" id="last_name" class="input text1" placeholder="Enter your last name">
+            <input type="email" name="email" id="mail" placeholder="Enter your email address" class="input text1">
+            <textarea name="complain" id="complain" cols="40" rows="5" placeholder="Describe your issue" class="input"></textarea>
+            <button type="submit" class="primary_button">Submit</button>
+        </form>
+    </div>
+block scripts 
+    <script src="../static/scripts/contact.js"></script>
+
+    

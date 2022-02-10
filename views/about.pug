@@ -1,0 +1,51 @@
+extends base.pug
+
+block links
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap" rel="stylesheet">
+
+block style
+    style 
+        include ./about.css
+        include ../static/fontawesome-free-5.15.4-web/css/all.css    
+
+block content
+    <section id="intro">
+            <h1 class="head1 center">WHY US?</h1>
+            <p class="para1 center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, unde, a eum inventore incidunt numquam commodi voluptatibus eveniet explicabo, sequi saepe. Nihil accusamus sit fugit nam expedita exercitationem aspernatur praesentium, earum at magni tempore. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas voluptates cum sit beatae nemo?</p>
+    </section>
+    <section id="mid">
+        <div id="box1">
+            <img src="../static/pics/holiday.webp" alt="error">
+            <div class="img_con">
+                <h1 class="head2 left">BEST HOLIDAY PLANS</h1>
+                <p class="para2 left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo sint earum, similique saepe debitis commodi ut alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, vel id.</p>
+            </div>
+        </div>
+        <div id="box2">
+            <div class="img_con">
+                <h1 class="head2 right">GREAT OVERALL EXPERIENCE</h1>
+                <p class="para2 right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo sint earum, similique saepe debitis commodi ut alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, vel id.</p>
+            </div>            
+            <img src="../static/pics/balloons travel.jpg" alt="">
+        </div>
+        <div id="box3">
+            <img src="../static/pics/discount.jpg" alt="">
+            <div class="img_con">
+                <h1 class="head2 left">SEASONAL DISCOUNTS AND OFFERS</h1>
+                <p class="para2 left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo sint earum, similique saepe debitis commodi ut alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, vel id.</p>
+            </div>
+        </div>
+    </section>
+    //- <section id="follow">
+    //-     <h1>FOLLOW US</h1>
+    //-     div
+    //-         <i class="fab fa-facebook">Duality</i>
+    //-         <i class="fab fa-twitter">Duality</i>
+    //-         <i class="fab fa-instagram">_Duality.com_</i>
+    //-         <i class="fab fa-linkedin">Duality</i>
+    //- </section>
