@@ -1,11 +1,6 @@
 console.log('yes');
 let form=document.getElementById("form");
 
-let p=document.createElement("p");
-p.innerText="*required";
-p.style.color="red";
-p.style.alignSelf="flex-start";
-
 let success=document.createElement("p");
 success.innerText="Your form has been submitted successfully";
 success.style.color="#179f22";
@@ -24,25 +19,7 @@ form.addEventListener('submit',(e)=>{
     let last_name=document.getElementById('last_name').value.trim();
     let email=document.getElementById('mail').value.trim();
     let complain=document.getElementById('complain').value.trim();
-
-    if(first_name.length<1)
-    {
-        document.getElementById('first_name').before(p);
-    }
-    else if(last_name.length<1)
-    {
-        document.getElementById('last_name').before(p);
-    }
-    else if(email.length<1)
-    {
-        document.getElementById('mail').before(p);
-    }
-    else if(complain.length<1)
-    {
-        document.getElementById('complain').before(p);
-    }
     
-    else
     {
         fetch('/contact',{
             method:'POST',
@@ -52,11 +29,11 @@ form.addEventListener('submit',(e)=>{
             body:JSON.stringify({first_name,last_name,email,complain})
         }).then(res=>res.json())
         .then((data)=>{
-            document.getElementById('first_name').value="";
-            document.getElementById('last_name').value="";
-            document.getElementById('mail').value="";
-            document.getElementById('complain').value="";
             if(data=="success"){
+                document.getElementById('first_name').value="";
+                document.getElementById('last_name').value="";
+                document.getElementById('mail').value="";
+                document.getElementById('complain').value="";
                 form.appendChild(success);
             }
             else{

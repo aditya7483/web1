@@ -42,11 +42,14 @@ block content
         </div>
         <form action="/contact" method="post" id="form">
             <h1 style="margin:20px">Send us a message</h1>
-            <p style="color:red">#{error}</p>
-            <input type="text" name="first_name" id="first_name" class="input text1" placeholder="Enter your first name">
-            <input type="text" name="last_name" id="last_name" class="input text1" placeholder="Enter your last name">
-            <input type="email" name="email" id="mail" placeholder="Enter your email address" class="input text1">
-            <textarea name="complain" id="complain" cols="40" rows="5" placeholder="Describe your issue" class="input"></textarea>
+            <p class="error"></p>
+            <input type="text" name="first_name" id="first_name" class="input text1" placeholder="Enter your first name" required>
+            <p class="error"></p>
+            <input type="text" name="last_name" id="last_name" class="input text1" placeholder="Enter your last name" required>
+            <p class="error"></p>
+            <input type="email" name="email" id="mail" placeholder="Enter your email address" class="input text1" required>
+            <p class="error"></p>
+            <textarea name="complain" id="complain" cols="40" rows="5" placeholder="Describe your issue" class="input" required></textarea>
             <button type="submit" class="primary_button">Submit</button>
         </form>
     </div>
