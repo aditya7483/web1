@@ -6,7 +6,7 @@ const mongoose=require('mongoose');
 const port=process.env.PORT||80;
 // const uri=process.env.MONGODB_URI;
 
-mongoose.connect('mongodb://localhost:27017/user_info',{useNewUrlParser:true,useUnifiedTopology:true});
+mongoose.connect('mongodb+srv://aditya7483:zekrom5112002@cluster0.a1jux.mongodb.net/user_info?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology:true});
 let db=mongoose.connection;
 db.on('error',console.error.bind(console,'connection error:'));
 db.once('open',()=>{
