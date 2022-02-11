@@ -4,9 +4,9 @@ const path=require('path');
 const bodyParser=require('body-parser');
 const mongoose=require('mongoose');
 const port=process.env.PORT||80;
-const uri=process.env.MONGODB_URI;
+// const uri=process.env.MONGODB_URI;
 
-mongoose.connect(uri,{useNewUrlParser:true,useUnifiedTopology:true});
+mongoose.connect('mongodb://localhost/user_info',{useNewUrlParser:true,useUnifiedTopology:true});
 let db=mongoose.connection;
 db.on('error',console.error.bind(console,'connection error:'));
 db.once('open',()=>{

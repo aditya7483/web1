@@ -1,10 +1,10 @@
 {
   "name": "web1",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "travel website",
   "main": "node app.js",
   "scripts": {
-    "start":"node app.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Aditya Narayan Jha",
@@ -25,5 +25,6 @@
   "bugs": {
     "url": "https://github.com/aditya7483/web1/issues"
   },
-  "homepage": "https://github.com/aditya7483/web1#readme"
+  "homepage": "https://github.com/aditya7483/web1#readme",
+  "devDependencies": {}
 }
