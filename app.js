@@ -6,7 +6,7 @@ const mongoose=require('mongoose');
 const port=process.env.PORT||80;
 // const uri=process.env.MONGODB_URI;
 
-mongoose.connect(`mongodb+srv://yourUsername:yourPassword@yourClusterName.n9z04.mongodb.net/sample_mflix?retryWrites=true&w=majority`,{useNewUrlParser:true,useUnifiedTopology:true});
+mongoose.connect(`mongodb+srv://aditya7483:zekrom5112002@Cluster0.n9z04.mongodb.net/sample_mflix?retryWrites=true&w=majority`,{useNewUrlParser:true,useUnifiedTopology:true});
 let db=mongoose.connection;
 db.on('error',console.error.bind(console,'connection error:'));
 db.once('open',()=>{
