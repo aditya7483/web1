@@ -30,7 +30,7 @@ let user_complaints=new mongoose.Schema({
 let complaints=mongoose.model('complaints',user_complaints);
 
 app.use(express.urlencoded());
-app.use('/static',express.static('./pug_projects/web1/static'));
+app.use('/static',express.static('static'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 
