@@ -47,7 +47,7 @@ nav{
 #logo>a{
     font-family: 'Righteous';
     text-decoration:none;
-    color: #00ffe7;
+    color: #38c2eb;
     /* position: relative; */
     margin: 1px 15px;
     font-size: 2.4rem;
@@ -96,6 +96,10 @@ nav{
     margin: 7px 9px;
     border-radius: 16px;
     border: 1px solid grey;
+}
+
+#signup{
+    margin-right: 22px;
 }
 
 .btn:hover{
