@@ -25,24 +25,23 @@ body{
 .intro::before{
     content:"";
     background: url('../static/pics/3144854.jpg') no-repeat center center/cover;
-    position:absolute;
+    position:fixed;
     width:100%;
-    height:100%;
+    height:100vh;
     top:0;
     left:0;
-    z-index: -1;
+    z-index: -999;
     opacity:0.86;
 }
 .intro{
     display:flex;
     flex-wrap: wrap;
-    /* flex-direction: column; */
     align-items: center;
     position: relative;
     top: 0;
     left: 0;
     width:100%;
-    height:600px;
+    height:99vh;
     z-index: 1;
 }
 
@@ -55,12 +54,6 @@ body{
     display:none;
 }
 
-/* .heading1{
-    font-size:2.5rem;
-font-family: 'Merriweather Sans', sans-serif;
-    margin: 70px 5px 9px 5px;
-} */
-
 .head1{
     margin: 14px;
     font-family: 'Roboto', sans-serif;
@@ -68,7 +61,6 @@ font-family: 'Merriweather Sans', sans-serif;
 }
 .head2{
     font-family: 'Lobster', cursive;
-    /* font-family: 'Roboto', sans-serif; */
     font-size: 5rem;
     letter-spacing: 1px;
     font-weight: bold;
@@ -83,7 +75,6 @@ font-family: 'Merriweather Sans', sans-serif;
 
 .btn1{
     font-family: 'Secular One', sans-serif;
-    /* font-family: 'Roboto', sans-serif; */
     width: 107px;
     height: 43px;
     font-size: 17px;
@@ -106,11 +97,20 @@ font-family: 'Merriweather Sans', sans-serif;
 
 /* services */
 
+#scroll{
+    position: relative;
+    height: 100%;
+    z-index: 1;
+    background-color: #fafaff;
+    padding: 1px 0px 9px 0px;
+}
+
 .heading2{
     font-family: 'Work Sans', sans-serif;
-    width: 200px;
-    margin: 22px auto 5px auto;
+    width: 219px;
+    margin: 13px auto 5px auto;
     color: #4a4ecb;
+    font-size:2.2rem;
 }
 
 .services{
@@ -147,10 +147,6 @@ font-family: 'Merriweather Sans', sans-serif;
     box-shadow: none;
     background-color:rgb(212, 212, 212);
     cursor:pointer;
-}
-
-.ser_head{
-    /* margin-bottom: 30px; */
 }
 
 #plane{
@@ -204,10 +200,12 @@ font-family: 'Merriweather Sans', sans-serif;
     box-shadow: black 4px 4px 11px 0px;
 }
 
-.about>h1{
+.heading3{
     font-size: 2.4rem;
-    margin: 40px;
-    color: #7258ff;
+    font-family: 'Work Sans', sans-serif;
+    width: 200px;
+    margin: 22px auto 29px auto;
+    color: #4a4ecb;
 }
 
 .p3{
@@ -245,6 +243,11 @@ font-family: 'Merriweather Sans', sans-serif;
 
 .btn3>a:hover{
     color:white;
+}
+
+footer{
+    position: relative;
+    z-index: 1;
 }
 
 @media screen and (max-width:886px) and (min-width:753px){
