@@ -73,14 +73,13 @@ app.post('/login',(req,res)=>
 
         else if(!info) 
         {
-            console.log('user doesnot exist');
             let message='please enter a valid username and password';
             res.json(message);
         }
 
         else{
             console.log(info);
-            return res.json({ redirect: '/', error: true })
+            return res.json({ redirect: '/', username:req.body.username});
         }
     });
 

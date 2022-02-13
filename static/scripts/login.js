@@ -29,7 +29,8 @@ form.addEventListener('submit',(e)=>{
         .then(res=>res.json())
         .then((results)=>{
             if (results.redirect) {
-                 window.location.href = results.redirect;
+                localStorage.setItem('username',results.username);
+                window.location.href = results.redirect;
             }
             
             else{
