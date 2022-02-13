@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    text-decoration: none!important;
 }
 
 .error{
@@ -34,7 +35,6 @@ nav{
 
 #logo>a{
     font-family: 'Righteous';
-    text-decoration:none;
     color: #35f9de;
     margin: 1px 15px;
     font-size: 2.4rem;
@@ -55,7 +55,6 @@ nav{
 }
 
 .navbar>li>a{
-    text-decoration: none;
     color: white;
     margin: 5px 14px;
     padding: 5px 21px;
@@ -87,6 +86,50 @@ nav{
     margin-right: 22px;
 }
 
+#profile{
+    height: 41px;
+    width: 42px;
+    margin: 4px 46px 1px 58px;
+    border-radius: 50px;
+}
+
+#profile:hover{
+    cursor:pointer;
+}
+
+#pro{
+    display:none;
+    flex-direction:column;
+    position:absolute;
+    top: 3rem;
+    left: 76.5rem;
+    width: 8rem;
+    background-color: white;
+}
+
+#pro>ul{
+    list-style: none;
+}
+
+#pro>ul>li{
+    padding: 3px 1px;
+}
+
+#pro>ul>li:hover{
+    cursor:pointer;
+    background-color: rgb(199, 199, 199);
+}
+
+#pro>ul>li>a{
+    color:black;
+    padding: 3px 12px;
+}
+
+
+#pro>ul>li>a:active{
+    color:black;
+}
+
 .btn:hover{
     cursor:pointer;
     background-color: rgb(199, 199, 199);
@@ -94,14 +137,8 @@ nav{
 
 .btn>a, .btn>a:focus{
     color:black;
-    text-decoration: none!important;
     padding: 10px 15px;
 }
-/* 
-#log{
-    position: absolute;
-    left: 72rem;
-} */
 
 footer{
     background-color: #262626;
