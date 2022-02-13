@@ -7,11 +7,6 @@ body{
     background-color: #e7fdfd;
 }
 
-.error{
-    color:red;
-    align-self: flex-start;
-}
-
 #contact{
     background-color: rgb(149, 149, 149);
     border-radius: 11px;
@@ -26,7 +21,6 @@ body{
     height: 100%;   
     width: 100%;
     z-index: -1;
-    opacity:0.8;
 }
 
 #con_intro{
@@ -38,7 +32,7 @@ body{
 
 #heading1{
     font-family: 'Rowdies', cursive;
-    margin: 44px 0px 42px 20px;
+    margin: 73px 0px 42px 20px;
 }
 
 p#para {
@@ -94,6 +88,7 @@ form{
     border-radius:6px;
     width:23rem;
     justify-content: center;
+    font-family: sans-serif;
 }
 
 .text1{

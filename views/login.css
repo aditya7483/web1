@@ -58,10 +58,6 @@ body{
     box-shadow: none;
 }
 
-.error{
-    color:red;
-}
-
 form{
     display: flex;
     align-items: center;

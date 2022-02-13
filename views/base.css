@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
-/* body{
-    background-color: #d6e5f5;
-} */
-
+.error{
+    color:red;
+    align-self: flex-start;
+}
 
 .center{
     text-align: center;
@@ -26,6 +26,8 @@ nav{
     display:flex;
     flex-wrap: wrap;
     position:fixed;
+    top:0;
+    left:0;
     width:100vw;
     z-index: 2;
 }
