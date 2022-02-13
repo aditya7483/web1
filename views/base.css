@@ -14,7 +14,11 @@
     text-align: center;
 }
 
-#ham_menu{
+label{
+    display:none;
+}
+
+#ham{
     display:none;
 }
 
@@ -85,10 +89,14 @@ nav{
     margin-right: 22px;
 }
 
+#rel{
+    position: relative;
+}
+
 #profile{
     height: 41px;
     width: 42px;
-    margin: 4px 46px 1px 58px;
+    margin: 4px 22px 1px 39px;
     border-radius: 50px;
 }
 
@@ -100,8 +108,7 @@ nav{
     display:none;
     flex-direction:column;
     position:absolute;
-    top: 3rem;
-    left: 76.5rem;
+    left: -39px;
     width: 8rem;
     background-color: white;
 }
@@ -160,8 +167,8 @@ footer{
     }
 
     .navbar>li>a {
-        margin: 5px 9px;
-        padding: 3px 4px;
+        margin: 3px 5px;
+        padding: 6px 8px;
     }
     
     #signup{
@@ -171,19 +178,69 @@ footer{
     .btn{
         margin: 4px 7px;
     }
+
+    #profile{
+        height: 33px;
+        width: 33px;
+        margin: 5px 5px 0px 47px;
+    }
+
+    #pro{
+        left: -38px;
+    }
 }
 
 @media screen and (max-width:680px) {
+
+    label{
+        display: initial;
+        margin: 12px 0px 9px 11px;
+    }
+
+    #ham:checked~.navbar{
+        left:0;
+    }
+
     .navbar{
         display:flex;
         flex-direction: column;
         position:absolute;
-        top:0;
-        left:0;
+        height: 100vh;
+        width:100vw;
+        left:-100%;
+        background-color: #262626;
+        z-index: 1;
+        transition: all 0.5s;
     }
 
-    #ham_menu{
-        display: initial;
-        width:8%;
+    #logo{
+        margin:auto;
+    }
+
+    #logo>a{
+        font-size:1.6rem;
+    }
+
+    .navbar>li{
+        margin: 22px 0px;
+        align-self: center;
+    }
+
+    .btn{
+        margin:7px 0px;
+    }
+
+    #signup{
+        display:none;
+    }
+
+    #profile{
+        height: 33px;
+        width: 33px;
+        margin: 5px 5px 0px 0px;
+    }
+
+    #pro{
+        left: -86px;
     }
 }
