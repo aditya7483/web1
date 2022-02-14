@@ -13,7 +13,7 @@ body{
     background-color: #f4eaff;
 }
 
-body::before{
+.img::before{
     content:"";
     background: url('../static/pics/login.jpg') no-repeat center center/cover;
     height: 100%;
@@ -25,16 +25,20 @@ body::before{
     opacity:0.5;
 }
 
-.img{
+.img {
+    position: relative;
+    height:33rem;
+    width: 61rem;
     margin: 73px auto;
 }
 
 .img>h1{
     font-family: 'Lobster';
-    font-size: 3rem;    
-    width: 19rem;
+    font-size: 3rem;
+    width: 30%;
     margin: 52px auto;
 }
+
 #signup{
     height: 32px;
     background-color: #b563f3;
