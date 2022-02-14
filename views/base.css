@@ -253,4 +253,8 @@ footer{
     #pro{
         left: -86px;
     }
+    
+    footer{
+        font-size: 11px;
+    }
 }

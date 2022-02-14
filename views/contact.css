@@ -82,13 +82,18 @@ form{
     margin:auto;
 }
 
+form>h1{
+    margin:20px;
+}
+
 .input{
     margin:10px 0;
     border:1px solid black;
     border-radius:6px;
-    width:23rem;
+    width:21rem;
     justify-content: center;
     font-family: sans-serif;
+    margin: 11px 17px;
 }
 
 .text1{
@@ -107,4 +112,64 @@ textarea{
     font-weight: bold;
     cursor:pointer;
     background-color: #9e86ff;
+}
+
+@media screen and (max-width:800px) and (min-width:590px) {
+    #heading1{
+        margin: 73px 0px 23px 11px;
+    }
+    
+    #main_div{
+        width:86%;
+    }
+
+    .input{
+        width: 20rem;
+    }
+
+    #para{
+        margin:0px 13px;
+    }
+
+    form>h1{
+        font-size:28px;
+    }
+
+    .heading2{
+        font-size:21px;
+    }
+}
+
+@media screen and (max-width:590px){
+    #heading1{
+        font-size:27px;
+        margin-bottom:25px;
+    }
+
+    #main_div{
+        width:95%;
+    }
+    
+    .input{
+        width: 14rem;
+    }
+    
+    #para{
+        margin:0px 13px;
+    }
+    
+    form>h1{
+        font-size:25px;
+    }
+    
+    .heading2{
+        font-size:19px;
+    }
+    
+    .primary_button{
+        width: 4rem;
+        margin: 10px;
+        padding: 5px 0px;
+    }
+    
 }
