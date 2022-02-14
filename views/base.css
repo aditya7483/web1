@@ -85,7 +85,7 @@ nav{
     border: 1px solid grey;
 }
 
-#signup{
+#login{
     margin-right: 22px;
 }
 
@@ -171,7 +171,7 @@ footer{
         padding: 6px 8px;
     }
     
-    #signup{
+    #login{
         margin-right:0;
     }
 
@@ -231,7 +231,17 @@ footer{
     }
 
     #signup{
-        display:none;
+        visibility:hidden;
+        position:absolute;
+    }
+
+    #login{
+        margin-right: 0;
+    }
+
+    .btn>a, .btn>a:focus {
+        padding: 3px 5px;
+        font-size: smaller;
     }
 
     #profile{
