@@ -214,7 +214,7 @@
 
 .btn3>a{
     text-decoration: none;
-    padding: 9px 20px;
+    padding: 10px 20px;
     color: #00d0ff;
 }
 
@@ -232,14 +232,10 @@ footer{
     z-index: 1;
 }
 
-@media screen and (max-width:886px) and (min-width:753px){
+@media screen and (max-width:1206px) and (min-width:830px){
     /* body{
         background-color: rgb(78, 255, 8);
     } */
-
-    .intro{
-        height:375px;
-    }
 
     .btn1 {
         width: 109px;
@@ -252,11 +248,7 @@ footer{
     }
 
     .head2{
-        font-size: 2.7rem;
-    }
-
-    .con {
-        margin: 53px;
+        font-size: 3.6rem;
     }
 
     .p1{
@@ -265,65 +257,82 @@ footer{
     }
 
     .services>div{
-        margin:7px;
+        margin: 10px 0px;
+        height: 177px;
+        width: 268px;
+        border-radius: 19px;
+    }
+
+    #plane{
+        height: 57px;
+        margin: 7px;
+    }
+
+    #train{
+        height: 62px;
+        width: 64px;
+        margin: 4px;
+    }
+
+    #bus{
+        height: 51px;
+        width: 80px;
+        margin: 9px;
+    }
+
+    .btn2{
+        width: 87px;
+        padding: 6px 1px;
+    }
+
+    .heading2{
+        width: 180px;
+        font-size: 1.8rem;
+    }
+
+    .about{
+        border-radius :50px;
+    }
+
+    .heading3{
+        font-size: 2rem;
+        width:145px;
+    }
+
+    .btn3{
+        width: 115px;
+    }
+
+    .btn3>a{
+        padding: 10px 9px;
     }
 }
 
-@media screen and (max-width:752px){
-
-
-    
-
-    /* intro */
-
-    .intro {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 280px;
-        z-index: 1;
-    }
-
-    .con {
-        margin: 24px 3px;
-    }
-
+@media screen and (max-width:830px){
     .head1 {
         margin: 11px;
         font-size: 11px;
     }
 
     .head2 {
-        font-size: 1.6rem;
-    }
-
-    .p1 {
-        font-size: 12px;
-        margin: 41px 14px;
+        font-size: 3rem;
     }
 
     .btn1 {
-        font-family: 'Secular One', sans-serif;
-        width: 78px;
-        height: 23px;
-        font-size: 11px;
-        font-weight: bold;
-        border: 3px double #af3ce9;
-        color: #af3ce9;
-        border-radius: 10px;
-        transition-property: all;
-        transition-duration: 0.5ms;
+        width: 82px;
+        height: 28px;
+        font-size: 12px
     }
     /* services */
 
     .heading2 {
         width: 125px;
         font-size: 20px;
+    }
+
+    .services{
+        flex-direction: column;
+        align-items: center;
     }
 
     .services>div {
@@ -336,38 +345,27 @@ footer{
         font-size: 18px;
     }
 
-    .p2{
-        font-size: 13px;
-    }
-
-    .btn2{
-        font-size: 11px;
-        width: 75px;
-        margin: 16px;
-        padding: 7px 2px;
-    }
-
     #plane{
-        height: 80px;
-        margin: 14px;
+        height: 57px;
+        margin: 7px;
     }
-    
+
     #train{
-        height: 84px;
-        width: 87px;
-        border: 3px solid #396fa3;
-        margin: 11px;
-        border-radius: 50px;
-        padding: 7px;
+        height: 62px;
+        width: 64px;
+        margin: 4px;
     }
 
     #bus{
-        height: 76px;
-        width: 115px;
-        border: 3px solid #387bbb;    
-        border-radius: 50px;
-        padding: 7px;
-        margin: 14px;
+        height: 51px;
+        width: 80px;
+        margin: 9px;
+    }
+
+    .btn2{ 
+        width: 75px;
+        padding: 3px 0px;
+        font-size: 10.5px;
     }
 
     /* about */
@@ -379,8 +377,8 @@ footer{
         width: 95%;
     }
 
-    .about>h1 {
-        font-size: 1.4rem;
+    .heading3{
+        font-size: 23px;
         margin: 21px;
         text-align: center;
         color: #7258ff;
@@ -396,8 +394,13 @@ footer{
     .btn3 {
         margin: 16px 7px;
         height: 23px;
-        width: 81px;
-        font-size: 11.5px;
+        padding: 0px;
+        width: 73px;
+        font-size: 10.5px;
+    }
+
+    .btn3>a{
+        padding: 4px 4px;
     }
 
     footer{
