@@ -43,7 +43,7 @@ p#para {
     display: flex;
     background-color: #f0f4ff;
     width: 70%;
-    height:29rem;
+    /* height:29rem; */
     margin: 24px auto;
     border: 2px solid black;
     box-shadow: black 1px 1px 6px 1px;
@@ -140,7 +140,7 @@ textarea{
     }
 }
 
-@media screen and (max-width:590px){
+@media screen and (max-width:590px) and (min-width:425px){
     #heading1{
         font-size:27px;
         margin-bottom:25px;
@@ -154,7 +154,7 @@ textarea{
         width: 14rem;
     }
     
-    #para{
+    p#para{
         margin:0px 13px;
     }
     
@@ -166,6 +166,48 @@ textarea{
         font-size:19px;
     }
     
+    .primary_button{
+        width: 4rem;
+        margin: 10px;
+        padding: 5px 0px;
+    }
+    
+}
+
+@media screen and (max-width:425px) {
+    #heading1 {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+    
+    p#para {
+        margin: 0px 13px;
+        font-size: 13px;
+    }
+    
+    #main_div {
+        width: 95%;
+        flex-direction: column;
+    }
+    
+    #logos{
+        box-shadow: black 0px 1px;
+        margin: 0px 11px;
+        width: initial;
+    }
+
+    form>h1{
+        font-size:25px;
+    }
+    
+    .heading2{
+        font-size:19px;
+    }
+    
+    .input{
+        width: 14rem;
+    }
+
     .primary_button{
         width: 4rem;
         margin: 10px;

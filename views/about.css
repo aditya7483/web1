@@ -179,7 +179,7 @@ body{
     }
 }
 
-@media screen and (max-width:696px) {
+@media screen and (max-width:696px) and (min-width:425px){
     #intro{
         margin: 41px 23px;
     }
@@ -220,4 +220,53 @@ body{
         height: 120px;
         width: 122px;
     }
+}
+
+@media screen and (max-width:425px) {
+    #intro{
+        margin: 41px 15px;
+    }
+    
+    #mid>div{
+        width:99%;
+        margin: 25px 4px;
+    }
+    
+    .head1{
+        font-size: 1.4rem;
+    }
+
+    .para1{
+        font-size:13px;
+    }
+    
+    .head2{
+        margin: 7px 10px;
+        font-size: 1.2rem;
+    }
+    
+    .para2{
+        font-size: 11px;
+        margin: 0px 1px 2px 5px;
+    }
+    
+    .img_con{
+        margin:0;
+    }
+    
+    #box1>img {
+        height: 92px;
+        width: 95px;
+    }
+    
+    #box2>img {
+        height: 88px;
+        width: 96px;
+    }
+    
+    #box3>img {
+        height: 86px;
+        width: 92px;
+    }
+    
 }
