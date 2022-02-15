@@ -96,11 +96,20 @@ body::before{
 }
 
 @media screen and (max-width:425px){
+    body::before{
+        position: static;
+    }
+
     .img>h1 {
         font-family: 'Lobster';
         font-size: 2.3rem;
         width: 14rem;
         margin: 34px auto;
+    }
+
+    .img>p{
+        width: 14rem;
+        font-size: 14px;
     }
 
     #form>h1 {
