@@ -406,7 +406,11 @@ footer{
 }
 
 @media screen and (max-width:492px){
-    
+    .intro{
+        height:95vh;
+    }
+
+
     .head1 {
         margin: 11px;
         font-size: 9px;
@@ -491,7 +495,7 @@ footer{
     
     .btn3 {
         margin: 16px 7px;
-        height: 23px;
+        height: 26px;
         padding: 0px;
         width: 73px;
         font-size: 10.5px;

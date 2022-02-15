@@ -101,7 +101,7 @@ form label{
 }
 
 .img>p{
-    width: 16rem;
+    width: 17rem;
     font-size: 18px;
     margin: 6px auto 10px auto;
 }
@@ -114,5 +114,15 @@ form label{
 
     .reg{
         width:17rem;
+    }
+
+    form label{
+        font-size: 17px;
+    }
+
+    .login {
+        width: 140px;
+        height: 31px;
+        font-size: 17px;
     }
 }
