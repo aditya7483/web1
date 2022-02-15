@@ -206,7 +206,7 @@
     height: 42px;
     width: 137px;
     font-size: 1.1rem;
-    border: 2px solid #00d0ff;
+    border: 2px solid #0aa6c9;
     border-radius: 18px;
     background: white;
     font-weight: bold;
@@ -215,12 +215,12 @@
 .btn3>a{
     text-decoration: none;
     padding: 10px 20px;
-    color: #00d0ff;
+    color: #0aa6c9;
 }
 
 .btn3:hover{
     cursor:pointer;
-    background-color: #00d0ff;
+    background-color: #0aa6c9;
 }
 
 .btn3>a:hover{
@@ -308,7 +308,7 @@ footer{
     }
 }
 
-@media screen and (max-width:830px){
+@media screen and (max-width:830px) and (min-width:492px){
     .head1 {
         margin: 11px;
         font-size: 11px;
@@ -364,7 +364,7 @@ footer{
 
     .btn2{ 
         width: 75px;
-        padding: 3px 0px;
+        padding: 5px 0px;
         font-size: 10.5px;
     }
 
@@ -402,5 +402,102 @@ footer{
     .btn3>a{
         padding: 4px 4px;
     }
+    
+}
 
+@media screen and (max-width:492px){
+    
+    .head1 {
+        margin: 11px;
+        font-size: 9px;
+    }
+    
+    .head2 {
+        font-size: 2rem;
+    }
+    
+    .btn1 {
+        width: 71px;
+        height: 24px;
+        font-size: 10px;
+    }
+    /* services */
+    
+    .heading2 {
+        width: 125px;
+        font-size: 20px;
+    }
+    
+    .services{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .services>div {
+        height: 153px;
+        width: 214px;
+    }
+    
+    .ser_head {
+        /* margin-bottom: 16px; */
+        font-size: 18px;
+    }
+    
+    #plane{
+        height: 50px;
+        margin: 7px;
+    }
+    
+    #train{
+        height: 57px;
+        width: 59px;
+        margin: 4px;
+    }
+    
+    #bus{
+        height: 51px;
+        width: 63px;
+        margin: 9px;
+    }
+    
+    .btn2{ 
+        width: 75px;
+        padding: 5px 0px;
+        font-size: 10.5px;
+    }
+    
+    /* about */
+    .about {
+        border-radius: 21px;
+        align-items: center;
+        margin: 39px 10px;
+        margin: 45px auto;
+        width: 95%;
+    }
+    
+    .heading3{
+        font-size: 23px;
+        margin: 21px;
+        text-align: center;
+        color: #7258ff;
+    }
+    
+    #ab_para {
+        width: 95%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 12px;
+    }
+    
+    .btn3 {
+        margin: 16px 7px;
+        height: 23px;
+        padding: 0px;
+        width: 73px;
+        font-size: 10.5px;
+    }
+    
+    .btn3>a{
+        padding: 4px 4px;
+    }
 }

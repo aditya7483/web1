@@ -169,6 +169,7 @@ footer{
     .navbar>li>a {
         margin: 3px 5px;
         padding: 6px 8px;
+        letter-spacing: 1px;
     }
     
     #login{
@@ -228,6 +229,7 @@ footer{
 
     .btn{
         margin:7px 0px;
+        width:50px;
     }
 
     #signup{
