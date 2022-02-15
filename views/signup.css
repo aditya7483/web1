@@ -30,6 +30,13 @@ body::before{
     margin: 127px auto;
 }
 
+.img>h1{
+    font-family: 'Lobster';
+    width: 14rem;
+    margin: 37px auto;
+    font-size: 2.7rem;
+}
+
 #signup{
     height: 32px;
     background-color: #b563f3;
@@ -64,7 +71,6 @@ form>h1{
 .entry{
     display: flex;
     flex-direction: column;
-    width: 365px;
 }
 
 form label{
@@ -73,9 +79,9 @@ form label{
 }
 
 .reg{
-    display:inline-block;
     margin: 6px 0px 21px 0px;
     padding: 5px 0px;
+    width:23rem;
 }
 
 .login{
@@ -98,4 +104,15 @@ form label{
     width: 16rem;
     font-size: 18px;
     margin: 6px auto 10px auto;
+}
+
+@media screen and (max-width:425px){
+    .img>h1{
+        font-size: 2.3rem;
+        width: 12rem;
+    }
+
+    .reg{
+        width:17rem;
+    }
 }
