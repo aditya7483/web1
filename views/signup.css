@@ -4,41 +4,40 @@
     text-decoration: none;
 }
 
-#alert{
-    background-color: antiquewhite;
-    color:rgb(248, 65, 65);
-}
-
 .error{
-    color:red;
+    color: red;
     align-self: flex-start;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 body{
-    background-color: #f4eaff;
+    position: relative;
 }
 
 body::before{
-    content:"";
-    background: url('../static/pics/login.jpg') no-repeat center center/cover;
-    height: 100%;
+    content:'';
+    background: url('../static/pics/login2.webp')no-repeat center center/cover;
+    height:100%;
     width:100%;
-    position:absolute;
+    position: absolute;
     top:0;
     left:0;
     z-index: -1;
-    opacity:0.5;
+    opacity:0.6;
 }
 
+
 .img{
-    height: 33rem;
-    margin: 127px auto;
+    padding: 1px;
+    font-family: 'Lato', sans-serif;
 }
 
 .img>h1{
     font-family: 'Lobster';
-    width: 14rem;
-    margin: 37px auto;
+    width: 16rem;
+    letter-spacing: 2px;
+    margin: 91px auto 0px auto;
     font-size: 2.7rem;
 }
 
@@ -80,22 +79,26 @@ form>h1{
 
 form label{
     font-size: 20px;
+    margin-top: 26px;
     font-weight: bold;
 }
 
 .reg{
-    margin: 6px 0px 21px 0px;
-    padding: 5px 0px;
-    width:23rem;
+    margin: 14px 0px 0px 0px;
+    padding: 5px 9px;
+    width: 23rem;
+    border-style: hidden;
+    height: 1.4rem;
+    background-color: whitesmoke;
+    box-shadow: black 0px 0px 3px 0px;
 }
 
 .login{
     width: 127px;
     font-weight: bold;
     height: 32px;
-    margin: 11px auto;
-    font-size: 18px;
-    font-family: serif;
+    margin: 26px auto 11px auto;
+    font-size: 14px;
     cursor:pointer;
     box-shadow: black 0px 1px 0px 0px;
     border-radius: 5px;
@@ -110,6 +113,7 @@ form label{
     font-size: 18px;
     margin: 6px auto 10px auto;
     text-align: center;
+    font-family: 'Lato', sans-serif;
 }
 
 .img>p>a{
@@ -117,13 +121,9 @@ form label{
 }
 
 @media screen and (max-width:425px){
-    body::before{
-        position: static;
-    }
-
     .img>h1{
-        font-size: 2.3rem;
-        width: 12rem;
+        font-size: 2rem;
+        width: 12.5rem;
     }
 
     .reg{
@@ -135,9 +135,9 @@ form label{
     }
 
     .login {
-        width: 140px;
-        height: 31px;
-        font-size: 17px;
+        width: 107px;
+        height: 30px;
+        font-size: 12px;
     }
 
     .img>p{

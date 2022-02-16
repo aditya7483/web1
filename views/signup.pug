@@ -10,23 +10,25 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
     <body>
         <div class="img">
             <h1>Register Now</h1>
             <form action="/signup" method="post" id="form">
-                //- <h1>Create New Account</h1>
                 <div class="entry">
-                    <p id="alert" class="error"></p>
                     <label for="username">Username</label>
-                    <p class="error"></p>
                     <input type="text" name="username" id="username" class="reg" placeholder="Create a new username" required>
+                    <p class="error"></p>
                     <label for="email">Enter your email address</label>
-                    <p class="error"></p>
                     <input type="email" name="email" id="email" class="reg"placeholder="Enter email address" required>
-                    <label for="password">Password</label>
                     <p class="error"></p>
+                    <label for="password">Password</label>
                     <input type="password" name="password" id="password" class="reg"placeholder="Create a new password" required>
+                    <p class="error"></p>
                     <button type="submit" class="login" href='/about'>Create Account</button>
                 </div>
             </form>

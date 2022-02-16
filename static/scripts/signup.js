@@ -1,14 +1,15 @@
 console.log("signup page");
 let errs=document.getElementsByClassName("error");
+let inputs=document.querySelectorAll('.reg');
 
 function clear_errors(){
     for(let i=0;i<errs.length;i++)
     {
+        inputs[i].style.border='none';
         errs[i].innerText="";
     }
 }
 
-let alt=document.getElementById('alert');
 const form=document.getElementById('form');
 
 form.addEventListener('submit',(e)=>{
@@ -20,15 +21,15 @@ form.addEventListener('submit',(e)=>{
     
     if(username.length<5)
     {
-        // document.getElementById('username').before(u_len);
-        errs[1].innerText="*username should have more than 5 characters";
+        inputs[0].style.border='2px solid red';
+        errs[0].innerText="Username should have more than 5 characters";
     }
     else if(password.length<5)
     {
-        // document.getElementById('password').before(p_len);
-        errs[3].innerText="*password should have more than 5 characters";
+        inputs[2].style.border='2px solid red';
+        errs[2].innerText="Password should have more than 5 characters";
     }
-
+    
     
     else{
         fetch('/signup',{
@@ -43,7 +44,11 @@ form.addEventListener('submit',(e)=>{
             if(data.redirect)
             window.location.href=data.redirect;
             
-            else alt.innerText=data;
+            else{
+                inputs[0].style.border='1px solid red';
+                errs[0].innerText=data;
+            } 
+                
         })
         .catch((err)=>{console.log(err)})
     }

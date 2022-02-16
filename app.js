@@ -73,7 +73,7 @@ app.post('/login',(req,res)=>
 
         else if(!info) 
         {
-            let message='please enter a valid username and password';
+            let message='Please enter a valid username and password';
             res.json(message);
         }
 
@@ -98,7 +98,7 @@ app.post('/signup',(req,res)=>
             {
                 if(err.code==11000)
                 {
-                    let message='username already in use. Please try a different one';
+                    let message='Username already in use. Please try a different one';
                     res.json(message);
                 }
                 else res.json("error in saving in the data base")

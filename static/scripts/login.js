@@ -1,11 +1,12 @@
 console.log("login page");
 
-let alt=document.getElementById('alert');
 let errs=document.getElementsByClassName("error");
+let inputs=document.querySelectorAll('.reg');
 
 function clear_errors(){
     for(let i=0;i<errs.length;i++)
     {
+        inputs[i].style.border="none";
         errs[i].innerText="";
     }
 }
@@ -34,7 +35,8 @@ form.addEventListener('submit',(e)=>{
             }
             
             else{
-                alt.innerText=results;
+                inputs[0].style.border='1px solid red';
+                errs[0].innerText=results;
             }
         })
         .catch(err=>console.log(err));
