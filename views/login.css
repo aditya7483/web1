@@ -12,6 +12,7 @@
 .error{
     color:red;
     align-self: flex-start;
+    font-weight: bold;
 }
 
 body{
@@ -39,7 +40,7 @@ body::before{
     font-family: 'Lobster';
     font-size: 3rem;
     width: 19rem;
-    margin: 52px auto;
+    margin: 54px auto 18px auto;
 }
 
 #signup{
@@ -48,7 +49,7 @@ body::before{
     box-shadow: black 2px 2px 4px 0px;
     width: 9rem;
     display: inherit;
-    margin: 17px auto;
+    margin: 17px auto 55px auto;
 }
 
 #signup>a{
@@ -80,21 +81,26 @@ body::before{
 }
 
 #form label{
+    margin-top: 36px;
     font-size: 20px;
     font-weight: bold;
 }
 
 .reg{
-    width: 20rem;
-    margin: 6px 0px 21px 0px;
-    padding: 5px 0px;
+    margin: 14px 0px 0px 0px;
+    padding: 5px 9px;
+    width: 23rem;
+    border-style: hidden;
+    height: 1.4rem;
+    background-color: whitesmoke;
+    box-shadow: black 0px 0px 3px 0px;
 }
 
 .login{
     width: 127px;
     font-weight: bold;
     height: 32px;
-    margin: auto;
+    margin: 37px auto 1px auto;
     font-size: 18px;
     font-family: serif;
     cursor:pointer;
@@ -108,7 +114,7 @@ body::before{
 @media screen and (max-width:425px){
     .img>h1 {
         font-family: 'Lobster';
-        font-size: 2.3rem;
+        font-size: 2.2rem;
         width: 14rem;
         margin: 34px auto;
     }

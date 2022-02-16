@@ -14,10 +14,6 @@ block links
 
 block content 
 
-    <div id="con_intro">
-        <h1 id="heading1">Thanks for taking your time to reach out to us</h1>
-        <p id="para center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit repellendus animi eum dolor, excepturi consequatur.</p>
-    </div>
     <div id=main_div>
         <div id="logos">
             <img src="../static/pics/email logo.png" alt="" id="email">
@@ -44,7 +40,6 @@ block content
         </div>
         <form action="/contact" method="post" id="form">
             <h1>Send us a message</h1>
-            <p class="error"></p>
             <input type="text" name="first_name" id="first_name" class="input text1" placeholder="Enter your first name" required>
             <p class="error"></p>
             <input type="text" name="last_name" id="last_name" class="input text1" placeholder="Enter your last name" required>
@@ -52,6 +47,7 @@ block content
             <input type="email" name="email" id="mail" placeholder="Enter your email address" class="input text1" required>
             <p class="error"></p>
             <textarea name="complain" id="complain" cols="40" rows="5" placeholder="Describe your issue" class="input" required></textarea>
+            <p class="error"></p>
             <button type="submit" class="primary_button">Submit</button>
         </form>
     </div>

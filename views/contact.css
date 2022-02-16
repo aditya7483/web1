@@ -3,50 +3,35 @@
     padding:0;
 }
 
-body{
-    background-color: #e7fdfd;
-}
-
 #contact{
     background-color: rgb(149, 149, 149);
     border-radius: 11px;
 }
 
-#con_intro::before{
+body::before{
     content:"";
-    background: url('../static/pics/contact us.jpg') no-repeat center center/cover;
-    position: absolute;
-    top:0;
-    left:0;
-    height: 100%;   
+    background:url('../static/pics/contact us3.jpg') no-repeat center center/cover;
     width: 100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left: 0;
     z-index: -1;
+    opacity:0.7;
 }
 
-#con_intro{
-    position:relative;
-    border: 0.2px solid;
-    height: 15rem;
-    color:white
-}
-
-#heading1{
-    font-family: 'Baloo Bhaijaan 2', cursive;
-    margin: 73px 0px 42px 20px;
-    letter-spacing: 1px;
-    font-weight: bold;
-}
-
-p#para {
-    margin: 0px 50px;
+body{
+    background-color: #e7fdfd;
+    position: relative;
+    padding:1px;
 }
 
 #main_div{
+    font-family: 'Baloo Bhaijaan 2', cursive;
     display: flex;
-    background-color: #f0f4ff;
-    width: 70%;
-    /* height:29rem; */
-    margin: 24px auto;
+    background-color: #f5faff;
+    width: 66%;
+    margin: 125px auto 70px auto;
     border: 2px solid black;
     box-shadow: black 1px 1px 6px 1px;
     border-radius:20px;
@@ -54,11 +39,15 @@ p#para {
 
 #logos{
     box-shadow: black 2px 0px 0px 0px;
-    width:24rem;
+    width:15rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 34px 0px;
+}
+
+.heading2{
+    font-size: 16px;
 }
 
 #office{
@@ -77,6 +66,11 @@ p#para {
     margin-bottom: 25px;
 }
 
+.infos>p{
+    font-size: 14px;
+    line-height: 17px;
+}
+
 form{
     display:flex;
     flex-direction: column;
@@ -85,22 +79,25 @@ form{
 }
 
 form>h1{
-    margin:20px;
+    margin:20px 0px;
     font-family: 'Rowdies';
 }
 
 .input{
     margin:10px 0;
-    border:1px solid black;
+    /* border:1px solid black; */
     border-radius:6px;
-    width:21rem;
+    width:30rem;
     justify-content: center;
     font-family: sans-serif;
     margin: 11px 17px;
+    border: none;
+    box-shadow: black 0px 0px 3px 0px;
+    padding: 1px 13px;
 }
 
 .text1{
-    height:2rem;
+    height: 2rem;
 }
 
 textarea{
@@ -110,27 +107,35 @@ textarea{
 .primary_button{
     width: 6rem;
     margin: 13px;
-    padding: 10px 0px;
+    padding: 7px 0px;
     border-radius: 9px;
     font-weight: bold;
     cursor:pointer;
     background-color: #9e86ff;
 }
 
-@media screen and (max-width:800px) and (min-width:590px) {
-    #heading1{
-        margin: 73px 0px 23px 11px;
+@media screen and (max-width:1200px)and (min-width:800px){
+    .input{
+        width:22rem;
     }
+}
+
+@media screen and (max-width:800px) and (min-width:590px) {
     
     #main_div{
         width:86%;
+    }
+
+    #logos{
+        width:10rem;
+        margin-left:7px;
     }
 
     .input{
         width: 20rem;
     }
 
-    #para{
+    .para{
         margin:0px 13px;
     }
 
@@ -144,10 +149,6 @@ textarea{
 }
 
 @media screen and (max-width:590px) and (min-width:425px){
-    #heading1{
-        font-size:27px;
-        margin-bottom:25px;
-    }
 
     #main_div{
         width:95%;
@@ -157,7 +158,7 @@ textarea{
         width: 14rem;
     }
     
-    p#para{
+    .para{
         margin:0px 13px;
     }
     
@@ -178,15 +179,6 @@ textarea{
 }
 
 @media screen and (max-width:425px) {
-    #heading1 {
-        font-size: 22px;
-        margin-bottom: 25px;
-    }
-    
-    p#para {
-        margin: 0px 13px;
-        font-size: 13px;
-    }
     
     #main_div {
         width: 95%;
@@ -195,7 +187,7 @@ textarea{
     
     #logos{
         box-shadow: black 0px 1px;
-        margin: 0px 11px;
+        margin: 14px 11px;
         width: initial;
     }
 
@@ -212,7 +204,7 @@ textarea{
     }
     
     .input{
-        width: 14rem;
+        width: 16rem;
     }
 
     .primary_button{
