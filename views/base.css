@@ -16,6 +16,7 @@
 
 label{
     display:none;
+    color:white;
 }
 
 #ham{
@@ -108,8 +109,8 @@ nav{
     display:none;
     flex-direction:column;
     position:absolute;
-    left: -39px;
-    width: 8rem;
+    left: -56px;
+    width: 10rem;
     background-color: white;
 }
 
@@ -187,7 +188,7 @@ footer{
     }
 
     #pro{
-        left: -38px;
+        left: -73px;
     }
 }
 
@@ -253,7 +254,7 @@ footer{
     }
 
     #pro{
-        left: -86px;
+        left: -120px;
     }
     
     footer{

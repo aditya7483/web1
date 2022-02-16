@@ -31,8 +31,10 @@ body{
 }
 
 #heading1{
-    font-family: 'Rowdies', cursive;
+    font-family: 'Baloo Bhaijaan 2', cursive;
     margin: 73px 0px 42px 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
 }
 
 p#para {
@@ -84,6 +86,7 @@ form{
 
 form>h1{
     margin:20px;
+    font-family: 'Rowdies';
 }
 
 .input{
@@ -201,7 +204,11 @@ textarea{
     }
     
     .heading2{
-        font-size:19px;
+        font-size:18px;
+    }
+
+    .infos>p{
+        font-size: 13px;
     }
     
     .input{
