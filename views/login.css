@@ -32,7 +32,7 @@ body::before{
 }
 
 .img{
-    padding:1px;
+    padding:1px 0px 90px 0px;
     font-family: 'Lato', sans-serif;
 }
 
@@ -49,7 +49,7 @@ body::before{
     box-shadow: black 2px 2px 4px 0px;
     width: 9rem;
     display: inherit;
-    margin: 17px auto 55px auto;
+    margin: 17px auto 5px auto;
 }
 
 #signup>a{

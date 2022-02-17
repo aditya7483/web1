@@ -29,7 +29,7 @@ body::before{
 
 
 .img{
-    padding: 1px;
+    padding: 1px 0px 90px 0px;
     font-family: 'Lato', sans-serif;
 }
 
