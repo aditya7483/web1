@@ -1,6 +1,9 @@
 let login=document.getElementById('login')
 let signup=document.getElementById('signup');
-let profile=document.getElementById('profile');
+let profile=document.getElementById('profile');;
+let menu=document.getElementById('ham_menu');
+let navbar=document.querySelector('.navbar');
+
 
 if(!localStorage.getItem('username'))
 {
@@ -16,6 +19,20 @@ else{
     signup.style.display="none";
     profile.style.display="initial";
 }
+
+ham_menu.addEventListener('click',()=>{
+    if(navbar.style.left=='0px')
+    {
+        console.log('inside if');
+        navbar.style.left='-100%';
+    }
+
+    else{
+        
+        console.log('inside else');
+        navbar.style.left='0';
+    }
+})
 
 document.getElementById('logout').addEventListener('click',(e)=>{
     e.preventDefault();

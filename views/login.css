@@ -112,6 +112,10 @@ body::before{
 }
 
 @media screen and (max-width:425px){
+    .error{
+        font-size: 14px;
+    }
+    
     .img>h1 {
         font-family: 'Lobster';
         font-size: 2.2rem;

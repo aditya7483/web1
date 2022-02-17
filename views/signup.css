@@ -121,6 +121,10 @@ form label{
 }
 
 @media screen and (max-width:425px){
+    .error{
+        font-size: 14px;
+    }
+    
     .img>h1{
         font-size: 2rem;
         width: 12.5rem;
