@@ -41,15 +41,36 @@ app.set('views',path.join(__dirname,'views'));
 app.get('/',(req,res)=>{
     res.status(200).render('home.pug');
 });
+
+app.get('/admin',(req,res)=>{
+    res.render('admin.pug');
+});
+
+app.post('/admin',(req,res)=>{
+    
+});
+
 app.get('/contact',(req,res)=>{
     res.status(200).render('contact.pug');
 });
 
 app.post('/contact',(req,res)=>{
-    let message="success";
     console.log(req.body);
-
-    res.json(message);
+    try{
+        let com=new complaints(req.body);
+        com.save((err,info)=>{
+            if(err){
+                res.json(err);
+            }
+            else{
+                let message="success";
+                res.json(message);
+            }
+        })
+    }catch(err){
+        console.log(err);
+        res.end();
+    }
 })
 
 app.get('/about',(req,res)=>{
