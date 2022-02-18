@@ -40,7 +40,9 @@
     margin: 14px;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 10px;
+    font-weight: bold;
 }
+
 .head2{
     font-family: 'Lobster', cursive;
     font-size: 5rem;

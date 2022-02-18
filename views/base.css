@@ -200,8 +200,12 @@ footer{
     }
 
     #ham_menu{
-        padding: 12px 2px 3px 7px;
+        padding: 17px 2px 3px 10px;
         color: white;
+    }
+
+    nav{
+        height:2.75rem;
     }
 
     .navbar{

@@ -15,8 +15,8 @@ success.style.fontWeight="bold";
 
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
-    let first_name=document.getElementById('first_name').value.trim();
-    let last_name=document.getElementById('last_name').value.trim();
+    let firstName=document.getElementById('first_name').value.trim();
+    let lastName=document.getElementById('last_name').value.trim();
     let email=document.getElementById('mail').value.trim();
     let complain=document.getElementById('complain').value.trim();
     
@@ -26,7 +26,7 @@ form.addEventListener('submit',(e)=>{
             headers:{
                 'Content-Type':'application/json'
             },
-            body:JSON.stringify({first_name,last_name,email,complain})
+            body:JSON.stringify({firstName,lastName,email,complain})
         }).then(res=>res.json())
         .then((data)=>{
             if(data=="success"){

@@ -60,6 +60,7 @@ app.post('/contact',(req,res)=>{
         let com=new complaints(req.body);
         com.save((err,info)=>{
             if(err){
+                console.log(err)
                 res.json(err);
             }
             else{
