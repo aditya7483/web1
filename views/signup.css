@@ -4,6 +4,10 @@
     text-decoration: none;
 }
 
+.center{
+    text-align: center;
+}
+
 .error{
     color: red;
     align-self: flex-start;

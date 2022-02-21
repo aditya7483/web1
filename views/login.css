@@ -4,6 +4,10 @@
     text-decoration: none;
 }
 
+.center{
+    text-align: center;
+}
+
 #alert{
     background-color: rgb(253, 235, 212);
     color:rgb(248, 65, 65);
