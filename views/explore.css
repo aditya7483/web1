@@ -67,6 +67,7 @@ body{
     font-family: 'Archivo Black', sans-serif;
     font-size: 1.8rem;
     margin: 30px 0px;
+    padding:0px 6px;
 }
 
 .para1{
@@ -103,7 +104,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1px 8px;
+    margin: 13px 8px;
     border-radius: 10px;
     background-color: #fdf6ed;
     box-shadow: black 2px 2px 7px 0px;
@@ -161,8 +162,350 @@ body{
         margin: 31px 24px 36px 19px;
         font-size: 15px;
     }
+
+    .heading2{
+        font-size: 20px;
+    }
+
+    .para2{
+        font-size:14px;
+    }
 }
 
-@media screen and (max-width:864px)and (min-width:425px){
+@media screen and (max-width:864px)and (min-width:594px){
+    #container{
+        top: -36px;
+    }   
     
+    #nature {
+        height: 16rem;
+        width: 18rem;
+    }
+
+   #circle1 {
+        height: 66px;
+        width: 68px;
+        left: 4rem;
+        top: 27rem;
+    }
+
+    #circle2 {
+        height: 79px;
+        width: 86px;
+        top: 9rem;
+        left: 21rem;
+    }
+
+    
+    #con1 {
+     height: 13.5rem;
+     width: 23rem;
+    }
+    
+    .head1 {
+        font-size: 1.2rem;
+        margin: 25px 0px;
+    }
+    
+    .para1 {
+        margin: 0px 24px 36px 19px;
+        font-size: 12px;
+    }
+
+    #boxes{
+        flex-wrap: wrap;
+    }
+    
+    .heading2{
+        font-size: 17px;
+    }
+
+    .para2{
+        font-size:13px;
+    }
+    
+       #box1>img {
+        height: 62px;
+        margin: 1px 0px 17px 0px;
+    }
+
+    #box2>img {
+        height: 47px;
+        margin: 13px 1px 18px 1px;
+    }
+
+    #box3>img {
+        height: 51px;
+        margin: 9px 1px 17px 1px;
+    }
+
+    #box4>img {
+        margin: 10px 0px 6px 1px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width:594px) and (min-width:443px){
+    #container{
+        top: -36px;
+    }   
+    
+    #nature {
+        height: 12rem;
+        width: 14rem;
+        margin-left: 30px;
+    }
+
+   #circle1 {
+        height: 57px;
+        width: 60px;
+        left: 2rem;
+        top: 25rem;
+    }
+
+    #circle2 {
+        height: 70px;
+        width: 73px;
+        top: 10rem;
+        left: 15rem;
+        border: #2eb99a 10px solid;
+    }
+
+    
+    #con1 {
+        height: 15.5rem;
+        width: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .head1 {
+        font-size: 1.1rem;
+        margin: 18px 0px;
+    }
+    
+    .para1 {
+        margin: 0px 24px 36px 19px;
+        font-size: 10px;
+    }
+
+    #boxes{
+        flex-wrap: wrap;
+    }
+    
+    #boxes>div{
+        width:16rem;
+    }
+
+    .heading2{
+        font-size: 15px;
+    }
+
+    .para2{
+        font-size: 12px;
+        margin-bottom: 28px;
+    }
+    
+    #box1>img {
+        height: 58px;
+        margin: 1px 0px 17px 0px;
+    }
+
+    #box2>img {
+        height: 44px;
+        margin: 13px 1px 18px 1px;
+    }
+
+    #box3>img {
+        height: 48px;
+        margin: 9px 1px 17px 1px;
+    }
+
+    #box4>img {
+        margin: 10px 0px 6px 1px;
+        height: 54px;
+    }
+}
+
+
+@media screen and (max-width:443px) and (min-width:370px){
+    #container{
+        top: -114px;
+        height: 27rem;
+    }   
+    
+    #nature {
+        height: 10rem;
+        width: 12rem;
+        position: absolute;
+        margin-left: 0;
+        left: 1rem;
+        top: 12rem;
+    }
+
+    #circle1 {
+        height: 39px;
+        width: 41px;
+        left: 1rem;
+        top: 22rem;
+    }
+
+    #circle2 {
+        height: 47px;
+        width: 49px;
+        top: 11rem;
+        left: 12rem;
+        border: #2eb99a 7px solid;
+    }
+
+    
+    #con1 {
+        position: absolute;
+        height: 15.5rem;
+        left: 7rem;
+        top: 15rem;
+        width: 15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .head1 {
+        font-size: 1.1rem;
+        margin: 18px 0px;
+    }
+    
+    .para1 {
+        margin: 0px 24px 36px 19px;
+        font-size: 10px;
+    }
+
+    #boxes{
+        flex-wrap: wrap;
+    }
+    
+    #boxes>div{
+        width: 14rem;
+    }
+
+    .heading2{
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+
+    .para2{
+        font-size: 12px;
+        margin-bottom: 28px;
+    }
+    
+    #box1>img {
+        height: 51px;
+        margin: 1px 0px 17px 0px;
+    }
+
+    #box2>img {
+        height: 40px;
+        margin: 13px 1px 18px 1px;
+    }
+
+    #box3>img {
+        height: 42px;
+        margin: 9px 1px 17px 1px;
+    }
+
+    #box4>img {
+        height: 47px;
+        margin: 10px 0px 6px 1px;
+    }
+}
+@media screen and (max-width:370px){
+    #container{
+        top: -114px;
+        height: 27rem;
+    }   
+    
+    #nature {
+        height: 10rem;
+        width: 12rem;
+        position: absolute;
+        margin-left: 0;
+        left: 0.3rem;
+        top: 12rem;
+    }
+
+    #circle1 {
+        height: 39px;
+        width: 41px;
+        left: 1rem;
+        top: 22rem;
+    }
+
+    #circle2 {
+        height: 47px;
+        width: 49px;
+        top: 11rem;
+        left: 12rem;
+        border: #2eb99a 7px solid;
+    }
+
+    
+    #con1 {
+        position: absolute;
+        height: 15.5rem;
+        left: 5rem;
+        top: 15rem;
+        width: 12rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .head1 {
+        font-size: 1.1rem;
+        margin: 18px 0px;
+    }
+    
+    .para1 {
+        margin: 0px 24px 36px 19px;
+        font-size: 10px;
+    }
+
+    #boxes{
+        flex-wrap: wrap;
+    }
+    
+    #boxes>div{
+        width: 14rem;
+    }
+
+    .heading2{
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+
+    .para2{
+        font-size: 12px;
+        margin-bottom: 28px;
+    }
+    
+    #box1>img {
+        height: 51px;
+        margin: 1px 0px 17px 0px;
+    }
+
+    #box2>img {
+        height: 40px;
+        margin: 13px 1px 18px 1px;
+    }
+
+    #box3>img {
+        height: 42px;
+        margin: 9px 1px 17px 1px;
+    }
+
+    #box4>img {
+        height: 47px;
+        margin: 10px 0px 6px 1px;
+    }
 }
