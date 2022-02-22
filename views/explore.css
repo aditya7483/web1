@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body::before{
+    content:"";
+    background: url('../static/pics/bodybackexp.jpg')no-repeat center center/cover;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: -5;
+    opacity: 0.29;
+}
+
+body{
+    position: relative;
+}
+
+.center{
+    text-align: center;
+}
+
+/* #container::before{
+    content:"";
+    background: url('../static/pics/nature back2.jpg')no-repeat center center/cover;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: -5;
+    opacity: 0.7;
+} */
+
+#container{
+    position: relative;
+    height: 37rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#circle1{
+    height: 83px;
+    width: 86px;
+    position: absolute;
+    background-color: #f7be1e;
+    z-index: 100;
+    border-radius: 50%;
+    top: 30rem;
+    left: 9rem;
+}
+
+#circle2{
+    position: absolute;
+    height: 102px;
+    width: 106px;
+    top: 3rem;
+    left: 39rem;
+    border: #2eb99a 13px solid;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+#con1{
+    height: 17rem;
+    width: 34rem;
+    position: relative;
+    left: -82px;
+    top: 91px;
+    z-index: 1;
+    color: white;
+    background-color: #f7be1e;
+    box-shadow: yellow 16px 17px 0px 0px;
+}
+
+/* #quotes{
+    position: absolute;
+    font-size: 83px;
+    left: 15px;
+} */
+
+.head1{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.8rem;
+    margin: 30px 0px;
+}
+
+.para1{
+    font-family: 'Didact Gothic', sans-serif;
+    margin: 31px 24px 36px 19px;
+}
+
+#nature{
+    height: 25rem;
+    width: 28rem;
+    border-radius: 50%;
+}
+
+#boxes{
+    display: flex;
+    justify-content: space-around;
+    padding: 53px 0px;
+}
+
+.heading2{
+    font-family: 'Archivo Black', sans-serif;
+    margin-bottom: 26px;
+    color: #8f6878;
+}
+
+#boxes>div{
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 17rem;
+    border-radius: 10px;
+    background-color: #fdf6ed;
+    box-shadow: black 2px 2px 7px 0px;
+}
+
+#box1>img{
+    height: 83px;
+    margin: 1px 0px 17px 0px;
+}
+
+#box2>img{
+    height: 70px;
+    margin: 13px 1px 18px 1px;
+}
+
+#box3>img{
+    height: 75px;
+    margin: 9px 1px 17px 1px;
+}
+
+#box4>img{
+    margin: 10px 0px 6px 1px;
+    height: 84px;
+}

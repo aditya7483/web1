@@ -1,0 +1,48 @@
+extends ./base.pug
+
+block links
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+
+block style 
+    style
+        include ./ explore.css
+
+block content
+    <section id="container">
+        <img src="../static/pics/nature back2.jpg" alt="" id="nature">
+        <p id="circle1"></p>
+        <p id="circle2"></p>
+        <div id="con1">
+            <!-- <span id="quotes">"</span> -->
+            <h1 class="head1 center">TO TRAVEL IS TO LIVE</h1>
+            <p class="para1 center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eum culpa rem earum libero mollitia labore perspiciatis obcaecati praesentium suscipit ratione fugiat inventore sed optio, amet sunt quod ut! Eius fugit necessitatibus recusandae cum amet explicabo esse tenetur fuga alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quas quo quos voluptate maxime?</p>
+        </div>
+    </section>
+
+    <section id="boxes">
+        <div id="box1">
+            <img src="../static/pics/bag.png" alt="" class="logo">
+            <h1 class="heading2 center">BEST DISCOUNTS</h1>
+        </div>
+        <div id="box2">
+            <img src="../static/pics/world tour3.png" alt="" class="logo">
+            <h1 class="heading2 center">WORLD TOUR</h1>
+        </div>
+        <div id="box3">
+            <img src="../static/pics/hotel.png" alt="" class="logo">
+            <h1 class="heading2 center">BEST HOTELS</h1>
+        </div>
+        <div id="box4">
+            <img src="../static/pics/camp.png" alt="" class="logo">
+            <h1 class="heading2 center">ADVENTURE AND CAMPING</h1>
+        </div>
+    </section>
+
+block scripts
+    <script src="../static/scripts/explore.js"></script>
+</html>

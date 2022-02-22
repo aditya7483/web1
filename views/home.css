@@ -64,10 +64,13 @@
     font-size: 17px;
     font-weight: bold;
     border: 3px double #af3ce9;
-    color: #af3ce9;
     border-radius: 10px;
     letter-spacing: 1px;
     margin: 24px;
+}
+
+.btn1>a{
+    color: #af3ce9;
 }
 
 .btn1:hover{

@@ -112,10 +112,8 @@ form label{
 }
 
 .img>p{
-    width: 17rem;
     font-size: 18px;
     margin: 6px auto 10px auto;
-    text-align: center;
     font-family: 'Lato', sans-serif;
 }
 
@@ -148,6 +146,5 @@ form label{
 
     .img>p{
         font-size:15px;
-        width:14rem;
     }
 }
