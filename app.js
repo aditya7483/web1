@@ -42,12 +42,8 @@ app.get('/',(req,res)=>{
     res.status(200).render('home.pug');
 });
 
-app.get('/admin',(req,res)=>{
-    res.render('admin.pug');
-});
-
-app.post('/admin',(req,res)=>{
-    
+app.get('/explore',(req,res)=>{
+    res.render('explore.pug');
 });
 
 app.get('/contact',(req,res)=>{

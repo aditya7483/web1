@@ -71,14 +71,18 @@
 
 .btn1>a{
     color: #af3ce9;
+    padding: 10px 13px;
 }
 
 .btn1:hover{
     cursor: pointer;
     background-color: #b94aff;
     box-shadow: #09ffac 1px 1px 8px 3px;
-    color: #e4e4eb;
     border-color: #09ffac;
+}
+
+.btn1>a:hover{
+    color: #e4e4eb;
 }
 
 
