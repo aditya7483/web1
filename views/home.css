@@ -319,6 +319,11 @@ footer{
         height: 28px;
         font-size: 12px
     }
+
+    .btn1>a{
+        padding:5px 10px;
+    }
+
     /* services */
 
     .heading2 {
@@ -408,7 +413,7 @@ footer{
 
     .head1 {
         margin: 11px;
-        font-size: 9px;
+        font-size: 12px;
     }
     
     .head2 {
@@ -420,6 +425,11 @@ footer{
         height: 24px;
         font-size: 10px;
     }
+
+    .btn1>a{
+        padding:3px 8px;
+    }
+
     /* services */
     
     .heading2 {
