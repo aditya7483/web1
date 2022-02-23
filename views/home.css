@@ -413,7 +413,7 @@ footer{
 
     .head1 {
         margin: 11px;
-        font-size: 12px;
+        font-size: 11px;
     }
     
     .head2 {
@@ -421,13 +421,13 @@ footer{
     }
     
     .btn1 {
-        width: 71px;
-        height: 24px;
-        font-size: 10px;
+        width: 79px;
+        height: 28px;
+        font-size: 12px;
     }
 
     .btn1>a{
-        padding:3px 8px;
+        padding:3px 9px;
     }
 
     /* services */

@@ -332,12 +332,12 @@ body{
 @media screen and (max-width:443px) and (min-width:370px){
     #container{
         top: -114px;
-        height: 27rem;
+        height: 33rem;
     }   
     
     #nature {
-        height: 10rem;
-        width: 12rem;
+        height: 14rem;
+        width: 17rem;
         position: absolute;
         margin-left: 0;
         left: 1rem;
@@ -348,14 +348,14 @@ body{
         height: 39px;
         width: 41px;
         left: 1rem;
-        top: 22rem;
+        top: 25rem;
     }
 
     #circle2 {
         height: 47px;
         width: 49px;
         top: 11rem;
-        left: 12rem;
+        left: 17rem;
         border: #2eb99a 7px solid;
     }
 
@@ -363,8 +363,8 @@ body{
     #con1 {
         position: absolute;
         height: 15.5rem;
-        left: 8rem;
-        top: 15rem;
+        left: 9rem;
+        top: 19rem;
         width: 15rem;
         display: flex;
         flex-direction: column;
